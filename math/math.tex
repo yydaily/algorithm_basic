@@ -1,0 +1,19 @@
+\newcommand\Math {
+	\base{math}{below right=3cm and 5cm of base}{数论};
+	\arrow{base}{math};
+	\done{gcd}{below left=3cm and 5cm of math}{\href{https://yydaily.github.io/2021/10/12/algorithm/gcd/}{欧几里得算法}};
+	\arrow{math}{gcd};
+	\done{exgcd}{below=3cm of gcd}{\href{https://yydaily.github.io/2021/10/14/algorithm/exgcd/}{扩展欧几里得}};
+	\arrow{gcd}{exgcd};
+	\done{congruence_equation}{below=3cm of math}{\href{https://yydaily.github.io/2021/10/15/algorithm/congruence_equation/}{线性同余方程}};
+	\arrow{math}{congruence_equation};
+	\todo{multiply_inverse}{below=6cm of congruence_equation}{逆元};
+	\arrow{congruence_equation}{multiply_inverse};
+	\arrow{exgcd}{multiply_inverse};
+	\done{chinese_remainder_theorem}{below=3cm of multiply_inverse}{\href{https://yydaily.github.io/2021/10/12/algorithm/chinese_remainder_theorem/}{中国剩余定理}};
+	\arrow{multiply_inverse}{chinese_remainder_theorem};
+	\todo{continued_fraction}{below right=3cm and 5cm of math}{连分数};
+	\arrow{math}{continued_fraction};
+	\todo{pell_function}{below=3cm of continued_fraction}{Pell方程};
+	\arrow{continued_fraction}{pell_function};
+}

@@ -1,0 +1,15 @@
+\newcommand\base[3] {
+	\node (#1) [draw, opacity=0.5, thick, text=black, minimum width=4cm, minimum height=2cm, align=center, #2] {#3};
+}
+
+\newcommand\done[3] {
+	\node (#1) [draw, opacity=0.5, thick, fill=green, fill opacity=0.7, text=black, minimum width=4cm, minimum height=2cm, align=center, #2] {#3};
+}
+
+\newcommand\todo[3] {
+	\node (#1) [draw, opacity=0.5, thick, fill=red, fill opacity=0.6, text=black, minimum width=4cm, minimum height=2cm, align=center, #2] {#3};
+}
+
+\newcommand\arrow[2] {
+	\draw [->, line width=1.2pt] (#1) -- (#2);
+}

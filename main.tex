@@ -1,0 +1,23 @@
+\documentclass[border=5mm,12pt,tikz]{standalone}
+\usetikzlibrary{3d,calc,backgrounds,patterns}
+\usetikzlibrary{positioning}
+\usepackage{tikz}
+\usepackage{color}
+\usepackage{fouriernc}
+\usepackage{xeCJK}
+\usepackage{amsmath}
+\usepackage[colorlinks,linkcolor=blue]{hyperref}
+
+\input{base.tex} % 基础节点
+\input{math/math.tex} % 数学相关
+\input{data_structure/data_structure.tex} % 数据结构相关
+
+\begin{document}
+\begin{tikzpicture}
+
+\node (base) [draw, opacity=0.5, thick, text=black, minimum width=4cm, minimum height=2cm, align=center] at (0,0) {基本的代码/\\ Debug能力};
+\Math
+\DataStructure
+
+\end{tikzpicture}
+\end{document}
