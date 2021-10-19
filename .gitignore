@@ -2,7 +2,6 @@
 *.fls
 *.log
 *.out
-*.pdf
 *.synctex.gz
 *.xdv
 *.swp
