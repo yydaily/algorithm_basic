@@ -1,33 +1,6 @@
-\newcommand\NumberTheory {
-	\base{number_theory}{below left=3cm and 5cm of math}{数论};
-	\arrow{math}{number_theory};
-	\done{gcd}{below left=3cm and 5cm of number_theory}{\href{https://yydaily.github.io/2021/10/12/algorithm/gcd/}{欧几里得算法}};
-	\arrow{number_theory}{gcd};
-	\done{exgcd}{below=3cm of gcd}{\href{https://yydaily.github.io/2021/10/14/algorithm/exgcd/}{扩展欧几里得}};
-	\arrow{gcd}{exgcd};
-	\done{congruence_equation}{below=3cm of number_theory}{\href{https://yydaily.github.io/2021/10/15/algorithm/congruence_equation/}{线性同余方程}};
-	\arrow{number_theory}{congruence_equation};
-	\todo{multiply_inverse}{below=6cm of congruence_equation}{逆元};
-	\arrow{congruence_equation}{multiply_inverse};
-	\arrow{exgcd}{multiply_inverse};
-	\done{chinese_remainder_theorem}{below=3cm of multiply_inverse}{\href{https://yydaily.github.io/2021/10/12/algorithm/chinese_remainder_theorem/}{中国剩余定理}};
-	\arrow{multiply_inverse}{chinese_remainder_theorem};
-	\todo{continued_fraction}{below right=3cm and 5cm of number_theory}{连分数};
-	\arrow{number_theory}{continued_fraction};
-	\todo{pell_function}{below=3cm of continued_fraction}{Pell方程};
-	\arrow{continued_fraction}{pell_function};
-}
-\newcommand\LinearAlgebra {
-	\done{linear_algebra}{below right=3cm and 5cm of math}{\href{https://yydaily.github.io/2021/10/18/algorithm/linear_algebra/}{线性代数}};
-	\arrow{math}{linear_algebra};
-	\done{matrix}{below=3cm of linear_algebra}{\href{https://yydaily.github.io/2021/10/19/algorithm/matrix/}{矩阵}};
-	\arrow{linear_algebra}{matrix};
-	\todo{gaussian_elimination}{below=3cm of matrix}{高斯消元法};
-	\arrow{matrix}{gaussian_elimination};
-}
 \newcommand\Math {
-	\base{math}{below right=3cm and 5cm of base}{数学};
-	\arrow{base}{math};
+	\base{数学}{below right=3cm and 5cm of base}{数学};
+	\arrow{base}{数学};
 
 	\NumberTheory
 	\LinearAlgebra

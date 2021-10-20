@@ -13,3 +13,20 @@
 \newcommand\arrow[2] {
 	\draw [->, line width=1.2pt] (#1) -- (#2);
 }
+
+% #1 : 当前节点的名字
+% #2 : 相对距离
+% #3 : 相对点的名字
+\newcommand\TodoWithArrow[3] {
+	\todo{#1}{#2 of #3}{#1};
+	\arrow{#3}{#1};
+}
+
+% #1 : 当前节点名字
+% #2 : 相对距离
+% #3 : 相对点的名字
+% #4 : 链接
+\newcommand\DoneWithArrow[4] {
+	\done{#1}{#2 of #3}{\href{https://yydaily.github.io/#4}{#1}}
+	\arrow{#3}{#1}
+}
