@@ -23,23 +23,25 @@
 \begin{tikzpicture}
 	\node (base) [draw, opacity=0.5, thick, text=black, minimum width=4cm, minimum height=2cm, align=center] at (0,0) {基本的代码/\\ Debug能力};
 	\node (comment) [above=of base,align=center] {白色方框表示一些汇总节点\\绿色方框表示已经完成的博客，可以直接点击\\红色方框表示尚未完成的博客，欢迎催更};
-	\base{数学}{8}{-4};
-	\base{数据结构}{-8}{-4};
-	\done{树状数组}{-8}{-8}{https://yydaily.github.io/2021/10/11/algorithm/binary_indexed_tree/};
-	\base{数论}{0}{-8};
-	\done{线性代数}{16}{-8}{https://yydaily.github.io/2021/10/18/algorithm/linear_algebra/};
-	\done{矩阵}{16}{-12}{https://yydaily.github.io/2021/10/19/algorithm/matrix/};
-	\todo{高斯消元法}{16}{-16};
+	\base{数学}{0}{-4};
+	\base{数据结构}{-16}{-4};
+	\done{树状数组}{-16}{-8}{https://yydaily.github.io/2021/10/11/algorithm/binary_indexed_tree/};
+	\base{数论}{-8}{-8};
+	\done{线性代数}{8}{-8}{https://yydaily.github.io/2021/10/18/algorithm/linear_algebra/};
+	\done{矩阵}{8}{-12}{https://yydaily.github.io/2021/10/19/algorithm/matrix/};
+	\todo{高斯消元法}{8}{-16};
 	\base{图论}{24}{-4};
 	\done{深度优先搜索}{24}{-8}{https://yydaily.github.io/2021/10/22/algorithm/dfs/};
-	\done{线性同余方程}{0}{-12}{https://yydaily.github.io/2021/10/15/algorithm/congruence_equation/};
-	\done{费马小定理}{0}{-16}{https://yydaily.github.io/2021/10/20/algorithm/fermat_little_theorem/};
-	\done{逆元}{0}{-20}{https://yydaily.github.io/2021/10/20/algorithm/inverse/};
-	\done{中国剩余定理}{0}{-24}{https://yydaily.github.io/2021/10/12/algorithm/chinese_remainder_theorem/};
-	\done{欧几里得算法}{-8}{-12}{https://yydaily.github.io/2021/10/12/algorithm/gcd/};
-	\done{扩展欧几里得}{-8}{-16}{https://yydaily.github.io/2021/10/14/algorithm/exgcd/};
-	\todo{连分数}{8}{-12};
-	\todo{Pell方程}{8}{-16};
+	\done{线性同余方程}{-8}{-12}{https://yydaily.github.io/2021/10/15/algorithm/congruence_equation/};
+	\done{费马小定理}{-8}{-16}{https://yydaily.github.io/2021/10/20/algorithm/fermat_little_theorem/};
+	\done{逆元}{-8}{-20}{https://yydaily.github.io/2021/10/20/algorithm/inverse/};
+	\done{中国剩余定理}{-8}{-24}{https://yydaily.github.io/2021/10/12/algorithm/chinese_remainder_theorem/};
+	\done{欧几里得算法}{-16}{-12}{https://yydaily.github.io/2021/10/12/algorithm/gcd/};
+	\done{扩展欧几里得}{-16}{-16}{https://yydaily.github.io/2021/10/14/algorithm/exgcd/};
+	\todo{连分数}{0}{-12};
+	\todo{Pell方程}{0}{-16};
+	\base{组合数学}{16}{-8};
+	\done{排列组合}{16}{-12}{https://yydaily.github.io/2021/10/24/algorithm/permutation_combination/};
 	\arrow{base}{数学};
 	\arrow{base}{数据结构};
 	\arrow{base}{图论};
@@ -58,5 +60,7 @@
 	\arrow{图论}{深度优先搜索};
 	\arrow{数学}{线性代数};
 	\arrow{数据结构}{树状数组};
+	\arrow{数学}{组合数学};
+	\arrow{组合数学}{排列组合};
 \end{tikzpicture}
 \end{document}
