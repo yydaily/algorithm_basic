@@ -7,22 +7,56 @@
 \usepackage{xeCJK}
 \usepackage{amsmath}
 \usepackage[colorlinks,linkcolor=blue]{hyperref}
-
-\input{base.tex} % 基础节点
-
-% 数学相关
-\input{math/math.tex} 
-\input{math/number_theory.tex} % 数论相关
-\input{math/linear_algebra.tex} % 线性代数
-
-\input{data_structure/data_structure.tex} % 数据结构相关
-
+\newcommand\base[3] {
+	\node (#1) [draw, opacity=0.5, thick, text=black, minimum width=4cm, minimum height=2cm, align=center] at (#2, #3) {#1};
+}
+\newcommand\done[4] {
+	\node (#1) [draw, opacity=0.5, thick, fill=green, fill opacity=0.7, text=black, minimum width=4cm, minimum height=2cm, align=center] at(#2, #3) {\href{#4}{#1}};
+}
+\newcommand\todo[3] {
+	\node (#1) [draw, opacity=0.5, thick, fill=red, fill opacity=0.6, text=black, minimum width=4cm, minimum height=2cm, align=center] at(#2, #3) {#1};
+}
+\newcommand\arrow[2] {
+	\draw [->, line width=1.2pt] (#1) -- (#2);
+}
 \begin{document}
 \begin{tikzpicture}
-
-\node (base) [draw, opacity=0.5, thick, text=black, minimum width=4cm, minimum height=2cm, align=center] at (0,0) {基本的代码/\\ Debug能力};
-\Math
-\DataStructure
-
+	\node (base) [draw, opacity=0.5, thick, text=black, minimum width=4cm, minimum height=2cm, align=center] at (0,0) {基本的代码/\\ Debug能力};
+	\node (comment) [above=of base,align=center] {白色方框表示一些汇总节点\\绿色方框表示已经完成的博客，可以直接点击\\红色方框表示尚未完成的博客，欢迎催更};
+	\base{数学}{8}{-4};
+	\base{数据结构}{-8}{-4};
+	\done{树状数组}{-8}{-8}{https://yydaily.github.io/2021/10/11/algorithm/binary_indexed_tree/};
+	\base{数论}{0}{-8};
+	\done{线性代数}{16}{-8}{https://yydaily.github.io/2021/10/18/algorithm/linear_algebra/};
+	\done{矩阵}{16}{-12}{https://yydaily.github.io/2021/10/19/algorithm/matrix/};
+	\todo{高斯消元法}{16}{-16};
+	\base{图论}{24}{-4};
+	\done{深度优先搜索}{24}{-8}{https://yydaily.github.io/2021/10/22/algorithm/dfs/};
+	\done{线性同余方程}{0}{-12}{https://yydaily.github.io/2021/10/15/algorithm/congruence_equation/};
+	\done{费马小定理}{0}{-16}{https://yydaily.github.io/2021/10/20/algorithm/fermat_little_theorem/};
+	\done{逆元}{0}{-20}{https://yydaily.github.io/2021/10/20/algorithm/inverse/};
+	\done{中国剩余定理}{0}{-24}{https://yydaily.github.io/2021/10/12/algorithm/chinese_remainder_theorem/};
+	\done{欧几里得算法}{-8}{-12}{https://yydaily.github.io/2021/10/12/algorithm/gcd/};
+	\done{扩展欧几里得}{-8}{-16}{https://yydaily.github.io/2021/10/14/algorithm/exgcd/};
+	\todo{连分数}{8}{-12};
+	\todo{Pell方程}{8}{-16};
+	\arrow{base}{数学};
+	\arrow{base}{数据结构};
+	\arrow{base}{图论};
+	\arrow{数学}{数论};
+	\arrow{数论}{欧几里得算法};
+	\arrow{数论}{线性同余方程};
+	\arrow{数论}{连分数};
+	\arrow{欧几里得算法}{扩展欧几里得};
+	\arrow{扩展欧几里得}{逆元};
+	\arrow{线性同余方程}{费马小定理};
+	\arrow{费马小定理}{逆元};
+	\arrow{逆元}{中国剩余定理};
+	\arrow{连分数}{Pell方程};
+	\arrow{线性代数}{矩阵};
+	\arrow{矩阵}{高斯消元法};
+	\arrow{图论}{深度优先搜索};
+	\arrow{数学}{线性代数};
+	\arrow{数据结构}{树状数组};
 \end{tikzpicture}
 \end{document}
