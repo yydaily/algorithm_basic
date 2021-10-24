@@ -5,7 +5,7 @@
 线性代数 done 1 -1 数学 https://yydaily.github.io/2021/10/18/algorithm/linear_algebra/
 矩阵 done 0 -1 线性代数 https://yydaily.github.io/2021/10/19/algorithm/matrix/
 高斯消元法 todo 0 -1 矩阵
-图论 base 3 -1 base
+图论 base 4 -1 base
 深度优先搜索 done 0 -1 图论 https://yydaily.github.io/2021/10/22/algorithm/dfs/
 线性同余方程 done 0 -1 数论 https://yydaily.github.io/2021/10/15/algorithm/congruence_equation/
 费马小定理 done 0 -1 线性同余方程 https://yydaily.github.io/2021/10/20/algorithm/fermat_little_theorem/
@@ -15,3 +15,5 @@
 扩展欧几里得 done 0 -1 欧几里得算法 https://yydaily.github.io/2021/10/14/algorithm/exgcd/
 连分数 todo 1 -1 数论
 Pell方程 todo 0 -1 连分数
+组合数学 base 2 -1 数学
+排列组合 done 0 -1 组合数学 https://yydaily.github.io/2021/10/24/algorithm/permutation_combination/
