@@ -18,3 +18,4 @@ Pell方程 todo 0 -1 连分数
 组合数学 base 2 -1 数学
 排列组合 done 0 -1 组合数学 https://yydaily.github.io/2021/10/24/algorithm/permutation_combination/
 容斥原理 done 0 -1 排列组合 https://yydaily.github.io/2021/10/26/algorithm/inclusion_exclusion/
+多重集容斥 done 0 -1 容斥原理 https://yydaily.github.io/2021/10/27/algorithm/multiset_inclusion_exclusion/
